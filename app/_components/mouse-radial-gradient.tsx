@@ -6,8 +6,9 @@ import { useEffect, useState } from "react";
 
 export default function MouseRadialGradient(props: any) {
   const [mounted, setMounted] = useState(false);
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
+  const [hasMouseMoved, setHasMouseMoved] = useState(false);
+  let mouseX = useMotionValue(-100000);
+  let mouseY = useMotionValue(-100000);
 
   useEffect(() => {
     setMounted(true);
@@ -21,11 +22,13 @@ export default function MouseRadialGradient(props: any) {
       clientX: number;
       clientY: number;
     }) {
+      setHasMouseMoved(true);
       mouseX.set(clientX);
       mouseY.set(clientY);
     }
 
     function handleMouseDown(e: MouseEvent) {
+      setHasMouseMoved(true);
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
     }
@@ -43,6 +46,7 @@ export default function MouseRadialGradient(props: any) {
         className={tw(
           "pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300",
           mounted &&
+            hasMouseMoved &&
             "lg:group-hover/body:opacity-100 motion-reduce:lg:group-hover/body:opacity-0",
         )}
         style={{
