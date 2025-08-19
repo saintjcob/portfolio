@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="relative z-10 mx-auto max-w-screen-sm px-4 py-20 lg:px-0">
       <AboutSection />
-      <RecentWork />
+      {/* <RecentWork /> */}
       <SocialList />
     </section>
   );

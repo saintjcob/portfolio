@@ -16,14 +16,14 @@ const LINKS = [
   { name: "LinkedIn", url: "https://linkedin.com/in/jakubziemba" },
   {
     name: "Email",
-    url: "mailto:ziemba.jak@gmail.com",
+    url: "",
     icon: <Copy size={14} />,
     onClick: (e: any) => {
       e.preventDefault();
       navigator.clipboard.writeText("ziemba.jak@gmail.com");
     },
   },
-  { name: "Instagram", url: "https://instagram.com/saintjcob.lab" },
+  // { name: "Instagram", url: "https://instagram.com/saintjcob.lab" },
 ];
 
 export default function SocialList() {

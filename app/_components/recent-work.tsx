@@ -8,16 +8,16 @@ export default function RecentWork() {
         <li>
           <LinkWithPreview href="https://acceltec.de">Acceltec</LinkWithPreview>
         </li>
-        <li>
+        {/* <li>
           <LinkWithPreview href="https://natimakeupik.com">
             Nati Makeupik
           </LinkWithPreview>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <LinkWithPreview href="https://www.monterail.com">
             Monterail
           </LinkWithPreview>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

@@ -70,6 +70,8 @@ export default function LinkWithPreview({
       <Link
         href={href}
         ref={linkRef}
+        target="_blank"
+        rel="noopener noreferrer"
         onMouseEnter={() => setShowPreview(true)}
         onMouseLeave={() => setShowPreview(false)}
         className="group relative inline-flex items-center"

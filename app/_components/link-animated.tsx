@@ -14,6 +14,8 @@ export default function LinkAnimated({
     <Link
       href={href}
       scroll={false}
+      target="_blank"
+      rel="noopener noreferrer"
       className={tw("group relative", className)}
     >
       {children}
