@@ -1,10 +1,19 @@
-// import LinkAnimated from "./link-animated";
+import LinkAnimated from "./link-animated";
 
 export default function AboutSection() {
   return (
     <div className="about-section max-w-[600px] leading-relaxed tracking-text text-foreground [perspective:400px]">
       <h1 className="text-2xl font-medium">Jakub Ziemba</h1>
-      <p className="pt-4">Design Engineer based in Warsaw</p>
+      <p className="pt-4">
+        Frontend Engineer{" "}
+        <LinkAnimated
+          href="https://cosmos.so"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @Cosmos
+        </LinkAnimated>
+      </p>
       {/* <p className="text-sm text-foreground-dimmed">
         <span className="text-foreground-dimmed">Currently:</span> Design
         Engineer @{" "}

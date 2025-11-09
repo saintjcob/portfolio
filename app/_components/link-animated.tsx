@@ -1,15 +1,18 @@
 import Link from "next/link";
 import { tw } from "@/utils/tailwind";
 
+interface LinkAnimatedProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  children: React.ReactNode;
+  href: string;
+  className?: string;
+}
+
 export default function LinkAnimated({
   children,
   href = "",
   className = "",
-}: {
-  children: React.ReactNode;
-  href: string;
-  className?: string;
-}) {
+}: LinkAnimatedProps) {
   return (
     <Link
       href={href}
