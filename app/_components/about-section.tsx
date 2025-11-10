@@ -5,13 +5,13 @@ export default function AboutSection() {
     <div className="about-section max-w-[600px] leading-relaxed tracking-text text-foreground [perspective:400px]">
       <h1 className="text-2xl font-medium">Jakub Ziemba</h1>
       <p className="pt-4">
-        Frontend Engineer{" "}
+        Frontend Engineer @{" "}
         <LinkAnimated
           href="https://cosmos.so"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @Cosmos
+          Cosmos
         </LinkAnimated>
       </p>
 
